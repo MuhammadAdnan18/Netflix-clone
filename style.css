@@ -34,5 +34,24 @@ p{
 }
 
 img{
-    width: 100%;
+    width: 20%;
+}
+
+.showcase{
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  background: url('../netflix/media/bck.jpg') no-repeat center/cover;
+}
+.showcasetop {
+  position: relative;
+  height: 90px;
+}
+
+.showcasetop img {
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
 }
