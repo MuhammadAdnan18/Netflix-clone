@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="styleshe et" href="http://use.fontawesome.com/releases/v5.8/css/all.css" 
-   integrity="sha384-oS3vJWv_0Ujz8fQzYUHtDYW+Pj2yciDxpsK10YPAYjqT085Qq/1cq5FLXAZQAy" 
-   crossorigin="anonymous">
-   <link rel="stylesheet", href="style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet", href="style.css">
     <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 <body>
@@ -28,31 +26,44 @@ Watch free for 30 Days <i class="fas fa-chevron-right btn-icon"></i>
 
 </div>
    </header>
-<section class="tabs">
+   <section class="tabs">
+      <div class="container">
+         <div id="tab-1" class="tab-item tab-border">
+            <i class="fas fa-door-open fa-3x"></i>
+            <p class="hide-sm">Cancel at any time</p>
+         </div>
+         <div id="tab-2" class="tab-item">
+            <i class="fas fa-tablet-alt fa-3x"></i>
+            <p class="hide-sm">Watch anywhere</p>
+         </div>
+         <div id="tab-3" class="tab-item">
+            <i class="fas fa-tags fa-3x"></i>
+            <p class="hide-sm">Pick your price</p>
+         </div>
+      </div>
+   </section>
+<section class="tab-content">
 <div class="container">
-   <div id="tab1" class="tab-items  tab-border"></div>
-<i class="fas fa-door-open fa-3x"></i>
-<p class="hide-sm">Cancel Anytime</p>
-</div>
-
-
-   <div id="tab2" class="tab-items"></div>
-<i class="fas fa-tablet-alt fa-3x"></i>
-<p class="hide-sm">Watch Anywhere</p>
-</div>
-
-
-   <div id="tab3" class="tab-items "></div>
-<i class="fas fa-tags fa-3x"></i>
-<p class="hide-sm">Pick Your price</p>
+<!--Tab content 1-->
+<div id="tab-1-content" class="tab-content-item show">
+<div class="tab-1-content-inner">
+   <div>
+      <p class="text-lg">
+         If you decide Netflix isn't for you - no problem. No commitment.
+         Cancel online anytime.
+      </p>
+      <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+   </div>
+   <img src="media/tab-content-1.png" alt="">
 
 </div>
 
+</div>
 
+</div>
 
-
+   
 </section>
-
 
 </body>
 </html>
