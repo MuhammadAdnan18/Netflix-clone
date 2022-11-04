@@ -157,12 +157,114 @@ border-bottom: var(--primary-color)4px solid;
   color: #fff;
 }
 
+/*hiding content initially*/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display:none ;
+}
+
+.show {
+
+display: block !important;
+
+}
+
+
 #tab-1-content .tab-1-content-inner {
 display:grid;
 grid-template-columns: repeat(2, 1fr);
 grid-gap: 2rem;
 align-items: center;
 justify-content: center;
+}
+
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+#tab-2-content .tab-2-content-bottom {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.table{
+width: 100%;
+margin-top: 2rem;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+.table thead th {
+
+text-transform: uppercase;
+padding: 0.8rem;
+
+}
+
+.table tbody tr td {
+
+color: #999;
+padding: 0.8rem 1.2rem;
+text-align: center;
+
+}
+
+.table tbody tr td:first-child {
+ 
+  text-align:left;
+  
+  }
+
+  .table tbody tr:nth-child(even) {
+ 
+background: #222; 
+    
+    }
+
+.footer{
+
+max-width: 75%;
+margin: 1rem auto;
+overflow: auto;
+
+}
+
+.footer, .footer a {
+
+color: #999;
+font-size: 0.9rem;
+
+}
+
+.footer p{
+
+  margin-bottom: 1.5rem;
+
+}
+
+.footer .footer-cols {
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 2rem;
+
+}
+
+.footer li {
+
+line-height: 1.9;
+
 }
 
 /*text*/
@@ -174,6 +276,12 @@ margin-bottom: 1rem;
 .text-lg{
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+.text-md{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
 }
 
 .text-center {
@@ -225,4 +333,39 @@ text-transform: uppercase;
   font-size: 1 rem;
   padding: 0.8rem 1.3rem;
   text-transform: uppercase;
+  }
+
+  @media(max-width: 960px){
+.showcase {
+  height: 70vh ;
+}
+
+.hide-sm {
+  display: none;
+}
+
+.showcasetop img {
+
+top:30%;
+left: 5%;
+transform: translate(0);
+
+}
+
+.showcaseContent h1 {
+
+font: size 2.7rem; ;
+line-height: 1;
+
+}
+
+.showcaseContent p{
+font-size: 1.0rem;
+}
+
+.btn-xl{
+font-size: 1.1rem;
+padding: 1.1rem 1.5rem;
+}
+
   }
